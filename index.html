@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Clima Tempo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="overview">
+            <section class="overviewData">
+                <div class="dta">
+                    <h3 class="locationHere" id="locationHere">Janeiro 2022</h3>
+                    <h5 class="dataHere" id="dataHere">Quinta, jan 4, 2022</h5>
+                </div>
+                <div class="searchInput">
+                    <input type="text" id="nameCity" class="nameCity" placeholder="Search location here" onchange="cidade()">
+                </div>
+            </section>
+            <h3 id="h3Overview">Today Overview</h3>
+            <div class="informOverview">
+                <div class="informContent informOverviewContent" id="item1 windInform">
+                    <p>Wind Speed</p><span><img src="./icon/315686_wind_icon.svg" alt=""><p id="windCondition">12km/h</p></span>
+                </div>
+                <div class="informContent informOverviewContent" id="item2 pressureInform">
+                    <p>Pressure</p><span><img src="icon/809411_gauge_indication_indicator_miscellaneous_pressure_icon (1).svg" alt=""><p id="pressureCondition">720hpa</p></span>
+                </div>
+                <div class="informContent informOverviewContent" id="item3 rainInform">
+                    <p>Nuvens</p><span><img src="icon/9045015_rain_icon.svg" alt=""><p id="cloudCondition">24%</p></span>
+
+                </div>
+                <div class="informContent informOverviewContent" id="item4 humiddityInform">
+                    <p>Humidity</p><span><img src="icon/9061722_humidity_weather_forecast_icon (1).svg" alt=""><p id="humidityCondition">1022</p></span>
+                </div>
+            </div>
+        </div>
+        <div class="realTemp">
+            <div class="realTempHours">
+                <section class="location">
+                    <h3 id="locationSearch">Rio de Janeiro</h3>
+                    <h4 id="locationState">Brasil</h4>
+                </section>
+                <section class="hours">
+                    <p id="hours">08:54 AM</p>
+                </section>
+            </div>
+            <section class="prevision">
+                <h3 class="temp" id="tempPrevision">28° C</h3>
+                <h3 class="description" id="descriptionPrevision">Nublado</h3>
+
+            </section>
+            <h6 id="temMaxMin">max: 28° | min: 24°</h6>
+            <hr class="hrTemp">
+            <h3 class="h3NextDay" id="h3NextDay">Next Days</h3>
+            <div class="containerNextDayPrevision">
+                <div class="nexDayPrevision">
+                    <p class="conditionNextday-1" id="conditionNextday-1">Nublado</p>
+                    <h4 class="titleNextDay-1" id="titleNextDay-1">12° C</h4>
+                    <p class="dataNextday-1" id="dataNextday-1">27/03</p>
+                </div>
+                <div class="nexDayPrevision">
+                    <p class="conditionNextday-2" id="conditionNextday-2">Nublado</p>
+                    <h4 class="titleNextDay-2" id="titleNextDay-2">12° C</h4>
+                    <p class="dataNextday-2" id="dataNextday-2">27/03</p>
+                </div>
+                <div class="nexDayPrevision">
+                    <p class="conditionNextday-3" id="conditionNextday-3">Nublado</p>
+                    <h4 class="titleNextDay-3" id="titleNextDay-3">12° C</h4>
+                    <p class="dataNextday-3" id="dataNextday-3">27/03</p>
+                </div>
+                <div class="nexDayPrevision">
+                    <p class="conditionNextday-4" id="conditionNextday-4">Nublado</p>
+                    <h4 class="titleNextDay-4" id="titleNextDay-4">12° C</h4>
+                    <p class="dataNextday-4" id="dataNextday-4">27/03</p>
+                </div>
+                <!-- <div class="nexDayPrevision">
+                    <p class="conditionNextday-5" id="conditionNextday-5">Nublado</p>
+                    <h4 class="titleNextDay-5" id="titleNextDay-5">12° C</h4>
+                    <p class="dataNextda-5" id="dataNextday-5">27/03</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
